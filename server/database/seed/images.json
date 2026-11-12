@@ -1,0 +1,609 @@
+{
+  "site": [
+    {
+      "file": "/uploads/site/01-1600.webp",
+      "thumb": "/uploads/site/01-800.webp",
+      "width": 1600,
+      "height": 576,
+      "commonsTitle": "Panoramic of Prizren from the castle.jpg",
+      "author": "Robot8A",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_of_Prizren_from_the_castle.jpg"
+    },
+    {
+      "file": "/uploads/site/02-1600.webp",
+      "thumb": "/uploads/site/02-800.webp",
+      "width": 1600,
+      "height": 1071,
+      "commonsTitle": "Prizren panorama.jpg",
+      "author": "Janusz Recław",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren_panorama.jpg"
+    },
+    {
+      "file": "/uploads/site/03-1600.webp",
+      "thumb": "/uploads/site/03-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Prizren Fortress (Kalaja e Prizrenit).jpg",
+      "author": "Tom.whitehead337",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren_Fortress_(Kalaja_e_Prizrenit).jpg"
+    }
+  ],
+  "kalaja-e-prizrenit": [
+    {
+      "file": "/uploads/monuments/kalaja-e-prizrenit/01-1600.webp",
+      "thumb": "/uploads/monuments/kalaja-e-prizrenit/01-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Prizren Fortress (Kalaja e Prizrenit).jpg",
+      "author": "Tom.whitehead337",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren_Fortress_(Kalaja_e_Prizrenit).jpg"
+    },
+    {
+      "file": "/uploads/monuments/kalaja-e-prizrenit/02-1600.webp",
+      "thumb": "/uploads/monuments/kalaja-e-prizrenit/02-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "The Prizren Fortress 01.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Prizren_Fortress_01.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kalaja-e-prizrenit/03-1600.webp",
+      "thumb": "/uploads/monuments/kalaja-e-prizrenit/03-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "The Prizren Fortress 02.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Prizren_Fortress_02.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kalaja-e-prizrenit/04-1600.webp",
+      "thumb": "/uploads/monuments/kalaja-e-prizrenit/04-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "The Prizren Fortress 06.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Prizren_Fortress_06.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kalaja-e-prizrenit/05-1600.webp",
+      "thumb": "/uploads/monuments/kalaja-e-prizrenit/05-800.webp",
+      "width": 1600,
+      "height": 902,
+      "commonsTitle": "Atop the Prizren Fortress, Kosovo.jpg",
+      "author": "Mike Dixon2",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atop_the_Prizren_Fortress,_Kosovo.jpg"
+    }
+  ],
+  "xhamia-e-sinan-pashes": [
+    {
+      "file": "/uploads/monuments/xhamia-e-sinan-pashes/01-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-sinan-pashes/01-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Sinan Pasha Mosque Prizren II.jpg",
+      "author": "Amer Miftari",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sinan_Pasha_Mosque_Prizren_II.jpg"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-sinan-pashes/02-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-sinan-pashes/02-800.webp",
+      "width": 1600,
+      "height": 778,
+      "commonsTitle": "Sinan Pasha Mosque view from Prizren Bridge.jpg",
+      "author": "Ravi Dwivedi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sinan_Pasha_Mosque_view_from_Prizren_Bridge.jpg"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-sinan-pashes/03-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-sinan-pashes/03-800.webp",
+      "width": 1600,
+      "height": 1233,
+      "commonsTitle": "Xhamia e Sinan Pashës, Prizren 2018 08.jpg",
+      "author": "Fitore Syla",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xhamia_e_Sinan_Pash%C3%ABs,_Prizren_2018_08.jpg"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-sinan-pashes/04-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-sinan-pashes/04-800.webp",
+      "width": 1600,
+      "height": 996,
+      "commonsTitle": "Sunset over Sinan Pasha Mosque, Accursed Mountains.jpg",
+      "author": "Tom.whitehead337",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_over_Sinan_Pasha_Mosque,_Accursed_Mountains.jpg"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-sinan-pashes/05-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-sinan-pashes/05-800.webp",
+      "width": 1350,
+      "height": 1800,
+      "commonsTitle": "Sinan Pasha Mosque (Prizren) 1.jpg",
+      "author": "IsaBoletinii",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sinan_Pasha_Mosque_(Prizren)_1.jpg"
+    }
+  ],
+  "lidhja-shqiptare-e-prizrenit": [
+    {
+      "file": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/01-1600.webp",
+      "thumb": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/01-800.webp",
+      "width": 1600,
+      "height": 1071,
+      "commonsTitle": "Lidhja e Prizrenit, By MIBER.jpg",
+      "author": "Musli Berisha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lidhja_e_Prizrenit,_By_MIBER.jpg"
+    },
+    {
+      "file": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/02-1600.webp",
+      "thumb": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/02-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Lidhja e Prizrenit 2.jpg",
+      "author": "Shpat Buzoku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lidhja_e_Prizrenit_2.jpg"
+    },
+    {
+      "file": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/03-1600.webp",
+      "thumb": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/03-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "The yeard of \"Lidhja e Prizrenit\".jpg",
+      "author": "Bleron Çaka",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_yeard_of_%22Lidhja_e_Prizrenit%22.jpg"
+    },
+    {
+      "file": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/04-1600.webp",
+      "thumb": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/04-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Albanian Leauge of Prizren 1878 - Museum 01.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albanian_Leauge_of_Prizren_1878_-_Museum_01.jpg"
+    },
+    {
+      "file": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/05-1600.webp",
+      "thumb": "/uploads/monuments/lidhja-shqiptare-e-prizrenit/05-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Albanian Leauge of Prizren 1878 - Museum 02.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albanian_Leauge_of_Prizren_1878_-_Museum_02.jpg"
+    }
+  ],
+  "kisha-e-shen-premtes": [
+    {
+      "file": "/uploads/monuments/kisha-e-shen-premtes/01-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-premtes/01-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "2011 Prizren, Cerkiew Bogurodzicy Ljeviškiej 11.JPG",
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Prizren,_Cerkiew_Bogurodzicy_Ljevi%C5%A1kiej_11.JPG"
+    },
+    {
+      "file": "/uploads/monuments/kisha-e-shen-premtes/02-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-premtes/02-800.webp",
+      "width": 1600,
+      "height": 1168,
+      "commonsTitle": "Iglesia de Nuestra Señora de Ljevis, Prizren, Kosovo, 2014-04-16, DD 05.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Nuestra_Se%C3%B1ora_de_Ljevis,_Prizren,_Kosovo,_2014-04-16,_DD_05.JPG"
+    },
+    {
+      "file": "/uploads/monuments/kisha-e-shen-premtes/03-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-premtes/03-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Our Lady of Ljeviš, Prizren, 2010. View from clock tower.jpg",
+      "author": "Photo Balkan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_Ljevi%C5%A1,_Prizren,_2010._View_from_clock_tower.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kisha-e-shen-premtes/04-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-premtes/04-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Our Lady of Ljeviš church, Prizren.jpg",
+      "author": "Amer Miftari",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_Ljevi%C5%A1_church,_Prizren.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kisha-e-shen-premtes/05-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-premtes/05-800.webp",
+      "width": 1600,
+      "height": 1036,
+      "commonsTitle": "Bogorodica Ljeviska1.jpg",
+      "author": "Vladimir Vukotic",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bogorodica_Ljeviska1.jpg"
+    }
+  ],
+  "kisha-e-shen-gjergjit": [
+    {
+      "file": "/uploads/monuments/kisha-e-shen-gjergjit/01-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-gjergjit/01-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Sv. Djordje Prizren.jpg",
+      "author": "Konstantin Novakovic",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sv._Djordje_Prizren.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kisha-e-shen-gjergjit/02-1600.webp",
+      "thumb": "/uploads/monuments/kisha-e-shen-gjergjit/02-800.webp",
+      "width": 1600,
+      "height": 1071,
+      "commonsTitle": "St. George Cathedral (Saborni hram Svetog Đorđa), Prizren.JPG",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:St._George_Cathedral_(Saborni_hram_Svetog_%C4%90or%C4%91a),_Prizren.JPG"
+    }
+  ],
+  "hamami-i-gazi-mehmet-pashes": [
+    {
+      "file": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/01-1600.webp",
+      "thumb": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/01-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Gazi Mehmed Paşa Hamamı - Prizren 01.jpg",
+      "author": "Photo Balkan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gazi_Mehmed_Pa%C5%9Fa_Hamam%C4%B1_-_Prizren_01.jpg"
+    },
+    {
+      "file": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/02-1600.webp",
+      "thumb": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/02-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Hamami i Gazi Mehmet Pashes, Prizren.jpg",
+      "author": "Sefer Susuri",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamami_i_Gazi_Mehmet_Pashes,_Prizren.jpg"
+    },
+    {
+      "file": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/03-1600.webp",
+      "thumb": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/03-800.webp",
+      "width": 1600,
+      "height": 1132,
+      "commonsTitle": "Gazi Mehmed Pasha Hamami.jpg",
+      "author": "Bajraktari",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gazi_Mehmed_Pasha_Hamami.jpg"
+    },
+    {
+      "file": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/04-1600.webp",
+      "thumb": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/04-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Gazi Mehmed Pasha Baths - Prizren - Kosovo.jpg",
+      "author": "Adam Jones, Ph.D.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gazi_Mehmed_Pasha_Baths_-_Prizren_-_Kosovo.jpg"
+    },
+    {
+      "file": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/05-1600.webp",
+      "thumb": "/uploads/monuments/hamami-i-gazi-mehmet-pashes/05-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "2011 Prizren, Hammam Gaziego Mehmeta Paszy 01.JPG",
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Prizren,_Hammam_Gaziego_Mehmeta_Paszy_01.JPG"
+    }
+  ],
+  "ura-e-gurit": [
+    {
+      "file": "/uploads/monuments/ura-e-gurit/01-1600.webp",
+      "thumb": "/uploads/monuments/ura-e-gurit/01-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Stone Bridge in Prizren (by Pudelek).JPG",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_in_Prizren_(by_Pudelek).JPG"
+    },
+    {
+      "file": "/uploads/monuments/ura-e-gurit/02-1600.webp",
+      "thumb": "/uploads/monuments/ura-e-gurit/02-800.webp",
+      "width": 1600,
+      "height": 1094,
+      "commonsTitle": "PrizrenStoneBridge.jpg",
+      "author": "Tahir Hoxha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PrizrenStoneBridge.jpg"
+    },
+    {
+      "file": "/uploads/monuments/ura-e-gurit/03-1600.webp",
+      "thumb": "/uploads/monuments/ura-e-gurit/03-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Stone Bridge Prizren II.jpg",
+      "author": "Amer Miftari",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_Prizren_II.jpg"
+    },
+    {
+      "file": "/uploads/monuments/ura-e-gurit/04-1600.webp",
+      "thumb": "/uploads/monuments/ura-e-gurit/04-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Ura e Gurit, Prizren 01.jpg",
+      "author": "Bleron Çaka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ura_e_Gurit,_Prizren_01.jpg"
+    },
+    {
+      "file": "/uploads/monuments/ura-e-gurit/05-1600.webp",
+      "thumb": "/uploads/monuments/ura-e-gurit/05-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Prizren, Kosovo February 2023 - Stone Bridge and Mosque.jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren,_Kosovo_February_2023_-_Stone_Bridge_and_Mosque.jpg"
+    }
+  ],
+  "kompleksi-i-marashit": [
+    {
+      "file": "/uploads/monuments/kompleksi-i-marashit/01-1600.webp",
+      "thumb": "/uploads/monuments/kompleksi-i-marashit/01-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Rrapi i Marashit.jpg",
+      "author": "Arbenllapashtica",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rrapi_i_Marashit.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kompleksi-i-marashit/02-1600.webp",
+      "thumb": "/uploads/monuments/kompleksi-i-marashit/02-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Rrapi Prizren6.jpg",
+      "author": "Mergim.emini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rrapi_Prizren6.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kompleksi-i-marashit/03-1600.webp",
+      "thumb": "/uploads/monuments/kompleksi-i-marashit/03-800.webp",
+      "width": 1600,
+      "height": 1071,
+      "commonsTitle": "Rrapi (Platanus orientalis) në Marash, Prizren.jpg",
+      "author": "Aljabakphoto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rrapi_(Platanus_orientalis)_n%C3%AB_Marash,_Prizren.jpg"
+    },
+    {
+      "file": "/uploads/monuments/kompleksi-i-marashit/04-1600.webp",
+      "thumb": "/uploads/monuments/kompleksi-i-marashit/04-800.webp",
+      "width": 1600,
+      "height": 1038,
+      "commonsTitle": "Rrapi Prizren1.jpg",
+      "author": "Mergim.emini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rrapi_Prizren1.jpg"
+    }
+  ],
+  "teqeja-e-halvetive": [
+    {
+      "file": "/uploads/monuments/teqeja-e-halvetive/01-1600.webp",
+      "thumb": "/uploads/monuments/teqeja-e-halvetive/01-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Teqja Halveti 01.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teqja_Halveti_01.jpg"
+    },
+    {
+      "file": "/uploads/monuments/teqeja-e-halvetive/02-1600.webp",
+      "thumb": "/uploads/monuments/teqeja-e-halvetive/02-800.webp",
+      "width": 1600,
+      "height": 900,
+      "commonsTitle": "Teqja Halveti 02.jpg",
+      "author": "GentiBehramaj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teqja_Halveti_02.jpg"
+    },
+    {
+      "file": "/uploads/monuments/teqeja-e-halvetive/03-1600.webp",
+      "thumb": "/uploads/monuments/teqeja-e-halvetive/03-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Marble Fountain at the Halveti Tekke, Prizren.jpg",
+      "author": "Sammeras23",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marble_Fountain_at_the_Halveti_Tekke,_Prizren.jpg"
+    },
+    {
+      "file": "/uploads/monuments/teqeja-e-halvetive/04-1600.webp",
+      "thumb": "/uploads/monuments/teqeja-e-halvetive/04-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Tombs of Halveti Sheikhs at the Halveti Tekke, Prizren.jpg",
+      "author": "Sammeras23",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombs_of_Halveti_Sheikhs_at_the_Halveti_Tekke,_Prizren.jpg"
+    },
+    {
+      "file": "/uploads/monuments/teqeja-e-halvetive/05-1600.webp",
+      "thumb": "/uploads/monuments/teqeja-e-halvetive/05-800.webp",
+      "width": 1600,
+      "height": 1163,
+      "commonsTitle": "2011 Prizren, Siedziba tarikatu Halveti 03.JPG",
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Prizren,_Siedziba_tarikatu_Halveti_03.JPG"
+    }
+  ],
+  "xhamia-e-emin-pashes": [
+    {
+      "file": "/uploads/monuments/xhamia-e-emin-pashes/01-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-emin-pashes/01-800.webp",
+      "width": 1600,
+      "height": 1070,
+      "commonsTitle": "Xhamia e Emin Pashes.JPG",
+      "author": "Fissnik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xhamia_e_Emin_Pashes.JPG"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-emin-pashes/02-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-emin-pashes/02-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Minaret of Emit Pasha Mosque - Prizren - Kosovo.jpg",
+      "author": "Adam Jones, Ph.D.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minaret_of_Emit_Pasha_Mosque_-_Prizren_-_Kosovo.jpg"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-emin-pashes/03-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-emin-pashes/03-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Foundation Inscription of Emin Pasha Mosque, Prizren (1831–32).jpg",
+      "author": "Sammeras23",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foundation_Inscription_of_Emin_Pasha_Mosque,_Prizren_(1831%E2%80%9332).jpg"
+    },
+    {
+      "file": "/uploads/monuments/xhamia-e-emin-pashes/04-1600.webp",
+      "thumb": "/uploads/monuments/xhamia-e-emin-pashes/04-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Ottoman Gravestones in the Courtyard of Emin Pasha Mosque, Prizren.jpg",
+      "author": "Sammeras23",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ottoman_Gravestones_in_the_Courtyard_of_Emin_Pasha_Mosque,_Prizren.jpg"
+    }
+  ],
+  "katedralja-e-zojes-ndihmetare": [
+    {
+      "file": "/uploads/monuments/katedralja-e-zojes-ndihmetare/01-1600.webp",
+      "thumb": "/uploads/monuments/katedralja-e-zojes-ndihmetare/01-800.webp",
+      "width": 1600,
+      "height": 1071,
+      "commonsTitle": "Konkatedralja DSC04658.JPG",
+      "author": "IsmailGagica",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Konkatedralja_DSC04658.JPG"
+    },
+    {
+      "file": "/uploads/monuments/katedralja-e-zojes-ndihmetare/02-1600.webp",
+      "thumb": "/uploads/monuments/katedralja-e-zojes-ndihmetare/02-800.webp",
+      "width": 1600,
+      "height": 1067,
+      "commonsTitle": "Konkatedrala Zonja Ndihmëtare 2.jpg",
+      "author": "ShkelzenRexha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Konkatedrala_Zonja_Ndihm%C3%ABtare_2.jpg"
+    },
+    {
+      "file": "/uploads/monuments/katedralja-e-zojes-ndihmetare/03-1600.webp",
+      "thumb": "/uploads/monuments/katedralja-e-zojes-ndihmetare/03-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Prizren Catholic Cathedral August 2025 front 1.jpg",
+      "author": "Bdx",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren_Catholic_Cathedral_August_2025_front_1.jpg"
+    },
+    {
+      "file": "/uploads/monuments/katedralja-e-zojes-ndihmetare/04-1600.webp",
+      "thumb": "/uploads/monuments/katedralja-e-zojes-ndihmetare/04-800.webp",
+      "width": 1600,
+      "height": 1200,
+      "commonsTitle": "Prizren Catholic Cathedral August 2025 interior nave 1 landscape.jpg",
+      "author": "Bdx",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren_Catholic_Cathedral_August_2025_interior_nave_1_landscape.jpg"
+    },
+    {
+      "file": "/uploads/monuments/katedralja-e-zojes-ndihmetare/05-1600.webp",
+      "thumb": "/uploads/monuments/katedralja-e-zojes-ndihmetare/05-800.webp",
+      "width": 1396,
+      "height": 1800,
+      "commonsTitle": "Prizren, Kosovo 2023-02-05 - Tower and Cathedral.jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prizren,_Kosovo_2023-02-05_-_Tower_and_Cathedral.jpg"
+    }
+  ]
+}
