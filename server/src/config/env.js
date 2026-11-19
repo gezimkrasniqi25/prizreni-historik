@@ -1,14 +1,30 @@
 import dotenv from 'dotenv';
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const SERVER_ROOT = path.resolve(__dirname, '..', '..');
-const REPO_ROOT = path.resolve(SERVER_ROOT, '..');
+export const REPO_ROOT = path.resolve(SERVER_ROOT, '..');
 
-// Prefer server/.env locally; also accept a root .env (common on Hostinger / Git deploys).
-dotenv.config({ path: path.join(SERVER_ROOT, '.env') });
-dotenv.config({ path: path.join(REPO_ROOT, '.env') });
+// Hostinger injects env via hPanel (process.env). .env files are optional extras.
+// dotenv does not override variables that are already set.
+const envCandidates = [
+  path.join(SERVER_ROOT, '.env'),
+  path.join(REPO_ROOT, '.env'),
+  path.join(process.cwd(), '.env'),
+  path.join(process.cwd(), 'server', '.env'),
+];
+
+for (const file of envCandidates) {
+  if (fs.existsSync(file)) {
+    const result = dotenv.config({ path: file });
+    if (!result.error) {
+      // eslint-disable-next-line no-console
+      console.log(`[env] loaded ${file}`);
+    }
+  }
+}
 
 const bool = (v, d = false) => (v === undefined || v === '' ? d : String(v).toLowerCase() === 'true');
 const num = (v, d) => (v === undefined || v === '' ? d : Number(v));
@@ -54,9 +70,15 @@ export const env = {
 
 if (!env.jwtSecret || env.jwtSecret.length < 32 || env.jwtSecret.startsWith('change-me')) {
   if (env.isProd) {
-    throw new Error('JWT_SECRET must be set to a long random value in production.');
+    throw new Error('JWT_SECRET must be set to a long random value in production (hPanel → Environment variables).');
   }
   // eslint-disable-next-line no-console
-  console.warn('[env] JWT_SECRET is weak/missing. Set a long random value in server/.env');
+  console.warn('[env] JWT_SECRET is weak/missing. Set a long random value in server/.env or hPanel.');
   env.jwtSecret = env.jwtSecret || 'dev-only-insecure-secret-please-change-this-value';
 }
+
+// Safe startup diagnostics (no secrets)
+// eslint-disable-next-line no-console
+console.log(
+  `[env] NODE_ENV=${env.nodeEnv} CLIENT_URL=${env.clientUrl} DB_HOST=${env.db.host} DB_NAME=${env.db.database} JWT=${env.jwtSecret ? 'set' : 'missing'}`,
+);
