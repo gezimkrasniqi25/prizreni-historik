@@ -9,13 +9,21 @@ async function start() {
     // eslint-disable-next-line no-console
     console.error(`\n[db] Cannot connect to MySQL at ${env.db.host}:${env.db.port} (${err.code || err.message}).`);
     // eslint-disable-next-line no-console
-    console.error('     Start MySQL, check server/.env and run:  npm run db:setup\n');
-    process.exit(1);
+    console.error('     Check DB_* env vars (Hostinger: DB_HOST=127.0.0.1) and run: npm run db:setup\n');
+    // Keep the process alive in production so Hostinger does not return a blank 503
+    // while env/DB is being configured; local/dev still fails fast.
+    if (!env.isProd) process.exit(1);
   }
-  app.listen(env.port, () => {
+
+  // Hostinger injects PORT; bind only to that port (no hardcoded host/port).
+  const port = Number(process.env.PORT) || env.port;
+  app.listen(port, () => {
     // eslint-disable-next-line no-console
-    console.log(`Prizren Heritage API listening on http://localhost:${env.port}  (${env.nodeEnv})`);
+    console.log(`Prizren Heritage API listening on port ${port} (${env.nodeEnv})`);
   });
 }
 
-start();
+start().catch((err) => {
+  console.error('Failed to start Prizren Heritage API:', err);
+  process.exit(1);
+});

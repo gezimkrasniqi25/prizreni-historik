@@ -4,8 +4,11 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const SERVER_ROOT = path.resolve(__dirname, '..', '..');
+const REPO_ROOT = path.resolve(SERVER_ROOT, '..');
 
+// Prefer server/.env locally; also accept a root .env (common on Hostinger / Git deploys).
 dotenv.config({ path: path.join(SERVER_ROOT, '.env') });
+dotenv.config({ path: path.join(REPO_ROOT, '.env') });
 
 const bool = (v, d = false) => (v === undefined || v === '' ? d : String(v).toLowerCase() === 'true');
 const num = (v, d) => (v === undefined || v === '' ? d : Number(v));

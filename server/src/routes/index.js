@@ -4,6 +4,7 @@ import * as pub from '../controllers/publicController.js';
 import * as user from '../controllers/userController.js';
 import * as adminM from '../controllers/adminMonumentController.js';
 import * as adminX from '../controllers/adminManageController.js';
+import { pool } from '../config/db.js';
 import { authenticate, optionalAuth, requireRole, requireVerified } from '../middleware/auth.js';
 import {
   emailLimiter, loginLimiter, registerLimiter, statsLimiter, uploadLimiter, validate, writeLimiter,
@@ -12,7 +13,19 @@ import { imageUpload, modelUpload } from '../middleware/upload.js';
 
 const router = Router();
 
-router.get('/health', (_req, res) => res.json({ status: 'ok', time: new Date().toISOString() }));
+router.get('/health', async (_req, res) => {
+  let db = 'ok';
+  try {
+    await pool.query('SELECT 1');
+  } catch (err) {
+    db = err.code || err.message || 'error';
+  }
+  res.status(db === 'ok' ? 200 : 503).json({
+    status: db === 'ok' ? 'ok' : 'degraded',
+    db,
+    time: new Date().toISOString(),
+  });
+});
 
 // ------------------------------------------------------------ authentication
 const a = Router();
