@@ -13,38 +13,69 @@ function buildFrom() {
   return from || 'Prizren Heritage <no-reply@localhost>';
 }
 
+function createSmtpTransport(host, port, secure) {
+  return nodemailer.createTransport({
+    host,
+    port,
+    secure,
+    auth: {
+      user: env.smtp.user,
+      pass: env.smtp.pass,
+    },
+    tls: {
+      minVersion: 'TLSv1.2',
+      servername: host,
+    },
+    connectionTimeout: 20000,
+    greetingTimeout: 20000,
+    socketTimeout: 20000,
+  });
+}
+
+async function connectSmtp() {
+  if (!env.smtp.user || !env.smtp.pass) {
+    throw new Error('SMTP_USER and SMTP_PASS must be set when SMTP_HOST is set');
+  }
+
+  const primaryHost = env.smtp.host || 'smtp.hostinger.com';
+  const port = env.smtp.port || 465;
+  const secure = env.smtp.secure || port === 465;
+
+  // Hostinger Email is Titan-backed on many accounts; try both hosts + 465/587.
+  const attempts = [
+    { host: primaryHost, port, secure },
+    { host: 'smtp.titan.email', port: 465, secure: true },
+    { host: 'smtp.hostinger.com', port: 465, secure: true },
+    { host: 'smtp.hostinger.com', port: 587, secure: false },
+    { host: 'smtp.titan.email', port: 587, secure: false },
+  ].filter(
+    (a, i, arr) => arr.findIndex((b) => b.host === a.host && b.port === a.port) === i,
+  );
+
+  let lastErr;
+  for (const attempt of attempts) {
+    try {
+      // eslint-disable-next-line no-console
+      console.log(`[mail] trying SMTP ${attempt.host}:${attempt.port} secure=${attempt.secure} user=${env.smtp.user}`);
+      const transporter = createSmtpTransport(attempt.host, attempt.port, attempt.secure);
+      await transporter.verify();
+      // eslint-disable-next-line no-console
+      console.log(`[mail] SMTP OK via ${attempt.host}:${attempt.port}`);
+      return transporter;
+    } catch (err) {
+      lastErr = err;
+      // eslint-disable-next-line no-console
+      console.error(`[mail] SMTP failed ${attempt.host}:${attempt.port}:`, err.message);
+    }
+  }
+  throw lastErr || new Error('SMTP connection failed');
+}
+
 async function getTransporter() {
   if (transporterPromise) return transporterPromise;
   transporterPromise = (async () => {
-    if (env.smtp.host) {
-      if (!env.smtp.user || !env.smtp.pass) {
-        throw new Error('SMTP_USER and SMTP_PASS must be set when SMTP_HOST is set');
-      }
-      const port = env.smtp.port || 465;
-      const secure = env.smtp.secure || port === 465;
-      // eslint-disable-next-line no-console
-      console.log(`[mail] SMTP ${env.smtp.host}:${port} secure=${secure} user=${env.smtp.user}`);
-      const transporter = nodemailer.createTransport({
-        host: env.smtp.host,
-        port,
-        secure,
-        auth: {
-          user: env.smtp.user,
-          pass: env.smtp.pass,
-        },
-        authMethod: 'LOGIN',
-        tls: {
-          minVersion: 'TLSv1.2',
-          servername: env.smtp.host,
-        },
-        connectionTimeout: 20000,
-        greetingTimeout: 20000,
-        socketTimeout: 20000,
-      });
-      await transporter.verify();
-      // eslint-disable-next-line no-console
-      console.log('[mail] SMTP connection verified');
-      return transporter;
+    if (env.smtp.host || (env.smtp.user && env.smtp.pass)) {
+      return connectSmtp();
     }
     if (env.isProd) throw new Error('SMTP is not configured (set SMTP_HOST in hPanel env).');
     const account = await nodemailer.createTestAccount();
