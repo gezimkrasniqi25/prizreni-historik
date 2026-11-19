@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "Prizren - platforma digjitale e trashegimise historike dhe kulturore",
+  "main": "server.js",
   "scripts": {
     "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "postinstall": "npm install --prefix server --omit=dev",
     "dev": "concurrently -n api,web -c yellow,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "db:setup": "npm run db:setup --prefix server",
     "build": "npm run build --prefix client",
-    "start": "npm run start --prefix server"
+    "start": "node server.js"
   },
   "devDependencies": {
     "concurrently": "^9.0.1"
