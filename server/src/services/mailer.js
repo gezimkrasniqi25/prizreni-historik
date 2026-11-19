@@ -4,19 +4,49 @@ import { env } from '../config/env.js';
 let transporterPromise;
 let usingEthereal = false;
 
+function buildFrom() {
+  const user = env.smtp.user;
+  const from = (env.smtp.from || '').trim();
+  // Hostinger rejects relay unless From matches the authenticated mailbox.
+  if (user && from && from.toLowerCase().includes(user.toLowerCase())) return from;
+  if (user) return `Prizren Heritage <${user}>`;
+  return from || 'Prizren Heritage <no-reply@localhost>';
+}
+
 async function getTransporter() {
   if (transporterPromise) return transporterPromise;
   transporterPromise = (async () => {
     if (env.smtp.host) {
-      return nodemailer.createTransport({
+      if (!env.smtp.user || !env.smtp.pass) {
+        throw new Error('SMTP_USER and SMTP_PASS must be set when SMTP_HOST is set');
+      }
+      const port = env.smtp.port || 465;
+      const secure = env.smtp.secure || port === 465;
+      // eslint-disable-next-line no-console
+      console.log(`[mail] SMTP ${env.smtp.host}:${port} secure=${secure} user=${env.smtp.user}`);
+      const transporter = nodemailer.createTransport({
         host: env.smtp.host,
-        port: env.smtp.port,
-        secure: env.smtp.secure,
-        auth: env.smtp.user ? { user: env.smtp.user, pass: env.smtp.pass } : undefined,
+        port,
+        secure,
+        auth: {
+          user: env.smtp.user,
+          pass: env.smtp.pass,
+        },
+        authMethod: 'LOGIN',
+        tls: {
+          minVersion: 'TLSv1.2',
+          servername: env.smtp.host,
+        },
+        connectionTimeout: 20000,
+        greetingTimeout: 20000,
+        socketTimeout: 20000,
       });
+      await transporter.verify();
+      // eslint-disable-next-line no-console
+      console.log('[mail] SMTP connection verified');
+      return transporter;
     }
-    if (env.isProd) throw new Error('SMTP is not configured (set SMTP_HOST in server/.env).');
-    // Development fallback: a throw-away Ethereal inbox (real SMTP delivery, fake mailbox).
+    if (env.isProd) throw new Error('SMTP is not configured (set SMTP_HOST in hPanel env).');
     const account = await nodemailer.createTestAccount();
     usingEthereal = true;
     // eslint-disable-next-line no-console
@@ -27,7 +57,10 @@ async function getTransporter() {
       secure: account.smtp.secure,
       auth: { user: account.user, pass: account.pass },
     });
-  })();
+  })().catch((err) => {
+    transporterPromise = null;
+    throw err;
+  });
   return transporterPromise;
 }
 
@@ -100,10 +133,13 @@ const layout = ({ title, bodyText, button, url, ignore }) => `<!doctype html>
 
 async function send({ to, subject, html, text }) {
   const transporter = await getTransporter();
-  const info = await transporter.sendMail({ from: env.smtp.from, to, subject, html, text });
+  const info = await transporter.sendMail({ from: buildFrom(), to, subject, html, text });
   if (usingEthereal) {
     // eslint-disable-next-line no-console
     console.log(`[mail] Preview (${subject}):`, nodemailer.getTestMessageUrl(info));
+  } else {
+    // eslint-disable-next-line no-console
+    console.log(`[mail] sent "${subject}" to ${to} id=${info.messageId}`);
   }
   return info;
 }

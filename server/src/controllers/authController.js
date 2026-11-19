@@ -64,11 +64,11 @@ async function createAndSendVerification(user, lang) {
   ]);
   try {
     await sendVerificationEmail({ to: user.email, firstName: user.first_name, token, lang });
-    return true;
+    return { sent: true };
   } catch (err) {
     // eslint-disable-next-line no-console
-    console.error('[mail] failed to send verification e-mail:', err.message);
-    return false;
+    console.error('[mail] failed to send verification e-mail:', err.message, err.response || err.code || '');
+    return { sent: false, error: err.message };
   }
 }
 
@@ -86,8 +86,14 @@ export const register = asyncHandler(async (req, res) => {
     [cleanText(firstName), cleanText(lastName), mail, hash, lang],
   );
   const user = { id: result.insertId, first_name: cleanText(firstName), email: mail };
-  const emailSent = await createAndSendVerification(user, lang);
-  res.status(201).json({ message: 'Registered. Please verify your e-mail.', emailSent });
+  const mailResult = await createAndSendVerification(user, lang);
+  res.status(201).json({
+    message: mailResult.sent
+      ? 'Registered. Please verify your e-mail.'
+      : 'Registered, but the verification e-mail could not be sent. Use Resend verification.',
+    emailSent: mailResult.sent,
+    mailError: mailResult.sent ? undefined : mailResult.error,
+  });
 });
 
 export const verifyEmail = asyncHandler(async (req, res) => {

@@ -95,6 +95,7 @@ export const translations = {
       verifyFail: 'Linku është i pavlefshëm ose ka skaduar.',
       resend: 'Ridërgo emailin e verifikimit',
       registered: 'Regjistrimi u krye. Kontrollo emailin për të aktivizuar llogarinë.',
+      registeredNoEmail: 'Regjistrimi u krye, por emaili i verifikimit nuk u dërgua. Provo “Ridërgo emailin”.',
       termsNote: 'Duke u regjistruar, pranoni që të përdorni platformën me respekt ndaj trashëgimisë dhe të dhënave personale.',
     },
     dashboard: {
@@ -284,6 +285,7 @@ export const translations = {
       verifyFail: 'The link is invalid or has expired.',
       resend: 'Resend verification email',
       registered: 'Registration successful. Check your email to activate your account.',
+      registeredNoEmail: 'Registered, but the verification email could not be sent. Try “Resend verification”.',
       termsNote: 'By signing up you agree to use the platform respectfully towards heritage and personal data.',
     },
     dashboard: {
@@ -473,6 +475,7 @@ export const translations = {
       verifyFail: 'Der Link ist ungültig oder abgelaufen.',
       resend: 'Bestätigungs-E-Mail erneut senden',
       registered: 'Registrierung erfolgreich. Prüfen Sie Ihre E-Mail zur Aktivierung.',
+      registeredNoEmail: 'Registrierung ok, aber die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte erneut senden.',
       termsNote: 'Mit der Registrierung erklären Sie, die Plattform respektvoll gegenüber Erbe und personenbezogenen Daten zu nutzen.',
     },
     dashboard: {

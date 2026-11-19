@@ -81,6 +81,7 @@ export function RegisterPage() {
   const [error, setError] = useState('');
   const [details, setDetails] = useState(null);
   const [done, setDone] = useState(false);
+  const [emailSent, setEmailSent] = useState(true);
   const [busy, setBusy] = useState(false);
 
   if (user) return <Navigate to="/dashboard" replace />;
@@ -96,7 +97,8 @@ export function RegisterPage() {
     setError('');
     setDetails(null);
     try {
-      await register(form);
+      const data = await register(form);
+      setEmailSent(data?.emailSent !== false);
       setDone(true);
     } catch (err) {
       setError(te(err.code) || te(err.message));
@@ -110,7 +112,10 @@ export function RegisterPage() {
     <AuthShell title={t('auth.signupTitle')}>
       {done ? (
         <div className="mt-6 space-y-4">
-          <SuccessBox message={t('auth.registered')} />
+          <SuccessBox message={emailSent ? t('auth.registered') : t('auth.registeredNoEmail')} />
+          {!emailSent && (
+            <Link to="/verify-email" className="btn-secondary inline-flex">{t('auth.resend')}</Link>
+          )}
           <Link to="/login" className="btn-primary inline-flex">{t('nav.login')}</Link>
         </div>
       ) : (

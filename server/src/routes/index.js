@@ -5,6 +5,7 @@ import * as user from '../controllers/userController.js';
 import * as adminM from '../controllers/adminMonumentController.js';
 import * as adminX from '../controllers/adminManageController.js';
 import { pool } from '../config/db.js';
+import { env } from '../config/env.js';
 import { authenticate, optionalAuth, requireRole, requireVerified } from '../middleware/auth.js';
 import {
   emailLimiter, loginLimiter, registerLimiter, statsLimiter, uploadLimiter, validate, writeLimiter,
@@ -23,6 +24,11 @@ router.get('/health', async (_req, res) => {
   res.status(db === 'ok' ? 200 : 503).json({
     status: db === 'ok' ? 'ok' : 'degraded',
     db,
+    smtp: {
+      configured: Boolean(env.smtp.host && env.smtp.user && env.smtp.pass),
+      host: env.smtp.host || null,
+      user: env.smtp.user || null,
+    },
     time: new Date().toISOString(),
   });
 });
